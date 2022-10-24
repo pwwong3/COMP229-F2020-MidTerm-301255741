@@ -1,9 +1,9 @@
-/*****************************
+/******************************
  * File: app.js
  * Author: Pak Wah Wong
  * Student ID: 301255741
- * Web app: My Favourite Books
- *****************************/
+ * Web app: Favourite Book List
+ ******************************/
 /* custom JS goes here */
 
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */

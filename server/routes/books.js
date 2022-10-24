@@ -1,9 +1,9 @@
-/*****************************
+/******************************
  * File: book.js
  * Author: Pak Wah Wong
  * Student ID: 301255741
- * Web app: My Favourite Books
- *****************************/
+ * Web app: Favourite Book List
+ ******************************/
 // modules required for routing
 let express = require('express');
 let router = express.Router();
