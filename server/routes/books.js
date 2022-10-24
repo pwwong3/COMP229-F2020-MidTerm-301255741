@@ -84,6 +84,25 @@ router.post('/:id', (req, res, next) => {
     /*****************
      * ADD CODE HERE *
      *****************/
+    const id = req.params.id;
+    const updatedBook = book({
+        _id: id,
+        Title: req.body.title,
+        Price: req.body.price,
+        Author: req.body.author,
+        Genre: req.body.genre
+    });
+
+    book.updateOne({_id: id}, updatedBook, err => {
+        if(err) {
+            console.log(err);
+            res.end(err);
+        }
+        else {
+            // refresh the books
+            res.redirect('/books');
+        }
+    });
 
 });
 
