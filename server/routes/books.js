@@ -39,6 +39,23 @@ router.post('/add', (req, res, next) => {
     /*****************
      * ADD CODE HERE *
      *****************/
+    const newBook = book({
+        Title: req.body.title,
+        Price: req.body.price,
+        Author: req.body.author,
+        Genre: req.body.genre
+    });
+
+    book.create(newBook, (err, Book) => {
+        if(err) {
+            console.log(err);
+            res.end(err);
+        }
+        else {
+            // refresh the books
+            res.redirect('/books');
+        }
+    });
 
 });
 
