@@ -23,7 +23,7 @@ $.fn.pageMe = function(opts){
         pager = $(settings.pagerSelector);
     }
 
-    var numItems = children.size();
+    var numItems = children.length;
     var numPages = Math.ceil(numItems/perPage);
 
     pager.data("curr",0);
