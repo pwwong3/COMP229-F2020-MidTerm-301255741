@@ -1,3 +1,9 @@
+/*****************************
+ * File: app.js
+ * Author: Pak Wah Wong
+ * Student ID: 301255741
+ * Web app: My Favourite Books
+ *****************************/
 /* custom JS goes here */
 
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */
@@ -23,7 +29,7 @@ $.fn.pageMe = function(opts){
         pager = $(settings.pagerSelector);
     }
 
-    var numItems = children.size();
+    var numItems = children.length;
     var numPages = Math.ceil(numItems/perPage);
 
     pager.data("curr",0);
